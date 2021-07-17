@@ -16,7 +16,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
 " shorter commands
-cnoreabbrev tree NERDTreeToggle
+cnoreabbrev tr NERDTreeToggle
 cnoreabbrev blame Gblame
 cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
@@ -31,6 +31,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+map <Leader>c :CocCommand<CR>
+map <Leader>a :CocList diagnostics<CR>
+map <Leader>o :CocList outline<CR>
 
 "Omnisharp
 augroup omnisharp_commands
@@ -76,7 +79,6 @@ augroup omnisharp_commands
 augroup END
 
 " diagnostics
-nnoremap <Leader>dia  :<C-u>CocList diagnostics<cr>
 nnoremap <leader>kp :let @*=expand("%")<CR>
 
 " tabs navigation
@@ -96,6 +98,12 @@ nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
 nnoremap <Leader>x :!node %<cr>
+
+nnoremap <Leader>f :<C-u>ClangFormat<CR>
+
+"ALE
+nmap <silent> gj :ALENext<CR>
+nmap <silent> gk :ALEPrevious<CR>
 
 set splitright
 function! OpenTerminal()

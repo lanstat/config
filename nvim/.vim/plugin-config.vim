@@ -37,13 +37,15 @@ let NERDTreeMapOpenInTab='\t'
 let g:javascript_plugin_flow = 1
 
 set wildignore+=*.bs.js
+set wildignore+=*.o
 let NERDTreeRespectWildIgnore=1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.vim/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsListSnippets="<c-l>"
 
 " Kite
 " let g:kite_supported_languages = ['typescript']
@@ -60,9 +62,20 @@ let g:neosnippet#enable_completed_snippet = 1
 let g:OmniSharp_server_path = '/home/lanstat/devel/omnisharp/run'
 "let g:OmniSharp_highlighting = 0
 
-" ale
-let g:ale_linters = { 'cs': ['OmniSharp'] } 
+" c++ syntax highlighting
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
 
+" ale
+let g:ale_linters = {
+\'cs': ['OmniSharp'],
+\'cpp': ['cpplint']
+\}
+let g:ale_linters_explicit = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)

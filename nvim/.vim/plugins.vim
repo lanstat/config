@@ -6,6 +6,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'flowtype/vim-flow'
+Plug 'rhysd/vim-clang-format'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -14,6 +15,7 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'ryanoasis/vim-devicons'
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -37,6 +39,8 @@ Plug 'dense-analysis/ale'
 " Languages
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'reasonml-editor/vim-reason-plus'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 " test
 Plug 'tyewang/vimux-jest-test'
