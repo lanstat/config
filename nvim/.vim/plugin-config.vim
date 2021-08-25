@@ -55,12 +55,12 @@ let g:kite_supported_languages = []
 " autocmd FileType typescript let b:coc_suggest_disable = 1
 let g:coc_global_extensions = [
       \ 'coc-tsserver',
-      \ 'coc-reason',
       \ 'coc-css',
       \ 'coc-pyright',
       \ 'coc-angular',
       \ 'coc-json',
       \ ]
+"      \ 'coc-reason',
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
