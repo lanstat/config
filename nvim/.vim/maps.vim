@@ -86,7 +86,7 @@ map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
 " buffers
-map <Leader>ob :Buffers<cr>
+map <Leader>ob :Telescope buffers<cr>
 
 " faster scrolling
 nnoremap <silent> <C-e> 10<C-e>

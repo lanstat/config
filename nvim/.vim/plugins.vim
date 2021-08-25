@@ -1,13 +1,5 @@
 call plug#begin()
 
-" syntax
-Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'flowtype/vim-flow'
-Plug 'rhysd/vim-clang-format'
-
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
@@ -36,11 +28,19 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 "linting
 Plug 'dense-analysis/ale'
 
+" syntax
+Plug 'sheerun/vim-polyglot'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'flowtype/vim-flow'
+Plug 'rhysd/vim-clang-format', {'for': 'cpp'}
+
 " Languages
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'reasonml-editor/vim-reason-plus'
-Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+Plug 'OmniSharp/omnisharp-vim', {'for': 'cs'}
+Plug 'reasonml-editor/vim-reason-plus', {'for': 'reason'}
+Plug 'jackguo380/vim-lsp-cxx-highlight', {'for': 'cpp'}
+Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile', 'for': 'scala'}
 
 " test
 Plug 'tyewang/vimux-jest-test'
@@ -60,5 +60,9 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-repeat'
+
+" telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()

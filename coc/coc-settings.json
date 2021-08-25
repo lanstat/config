@@ -1,0 +1,28 @@
+{
+	"diagnostic.displayByAle": true,
+	"codeLens.enable": true,
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"args": ["--log-file=/tmp/ccls.log", "-v=1"],
+			"filetypes": [
+				"c",
+				"cpp"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json"
+			],
+			"disableDiagnostics": true,
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"client": {
+					"snippetSupport": true
+				},
+				"highlight": { "lsRanges" : true }
+			}
+		}
+	}
+}
