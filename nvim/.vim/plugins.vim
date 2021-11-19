@@ -35,6 +35,7 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'flowtype/vim-flow'
 Plug 'rhysd/vim-clang-format', {'for': 'cpp'}
+Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 
 " Languages
 Plug 'OmniSharp/omnisharp-vim', {'for': 'cs'}
@@ -64,5 +65,15 @@ Plug 'tpope/vim-repeat'
 " telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" Coc extensions
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-reason', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-flutter', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-angular', {'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()

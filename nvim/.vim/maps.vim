@@ -99,7 +99,8 @@ nnoremap <Leader>gl :Gpull<cr>
 
 nnoremap <Leader>x :!node %<cr>
 
-nnoremap <Leader>f :<C-u>ClangFormat<CR>
+autocmd FileType cpp nnoremap <Leader>f :<C-u>ClangFormat<CR>
+autocmd FileType python nnoremap <Leader>f :YAPF<CR>
 
 "ALE
 nmap <silent> gj :ALENext<CR>
