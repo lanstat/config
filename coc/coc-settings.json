@@ -1,6 +1,6 @@
 {
 	"diagnostic.displayByAle": true,
-	"codeLens.enable": true,
+	"codeLens.enable": false,
 	"languageserver": {
 		"ccls": {
 			"command": "ccls",

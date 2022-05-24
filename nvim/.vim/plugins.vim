@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'arcticicestudio/nord-vim'
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -66,14 +67,16 @@ Plug 'tpope/vim-repeat'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+Plug 'github/copilot.vim'
+
 " Coc extensions
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-reason', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-metals', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-flutter', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-angular', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-reason', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-flutter', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-angular', {'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()
