@@ -37,6 +37,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'flowtype/vim-flow'
 Plug 'rhysd/vim-clang-format', {'for': 'cpp'}
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
+Plug 'maksimr/vim-jsbeautify', {'for': 'javascript'}
 
 " Languages
 Plug 'OmniSharp/omnisharp-vim', {'for': 'cs'}

@@ -101,6 +101,7 @@ nnoremap <Leader>x :!node %<cr>
 
 autocmd FileType cpp nnoremap <Leader>f :<C-u>ClangFormat<CR>
 autocmd FileType python nnoremap <Leader>f :YAPF<CR>
+autocmd FileType javascript nnoremap <Leader>f :call JsBeautify()<CR>
 
 "ALE
 nmap <silent> gj :ALENext<CR>
